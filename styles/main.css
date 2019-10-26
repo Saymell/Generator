@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.demo {
+    display: flex;
+    justify-content: center;
+    margin: 100px 150px;
+    position: absolute;
+    right: 0;
+}
+
+.demo__item {
+    overflow: hidden;
+}
+
+.demo__img {
+    width: 300px;
+    height: 300px;
+}
+
+.demo__link {
+    height: 300px;
+    display: block;
+    position: relative;
+    font-size: 2vh;
+    border-radius: 50px;
+}
+
+.demo__title {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10% 0;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.demo__more {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* .demo__link::before {
+    content: 'Заголовок';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10% 0;
+    background: rgba(0, 0, 0, 0.7);
+} */
+/* .demo__link::after {
+    content: 'Подробнее';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s ease;
+} */
+.demo__link:hover .demo__more {
+    opacity: 1;
+    padding: 40% 0;
+    height: 80%;
+}
+
+.setting__form {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.setting__form input {
+    margin-right: 20px;
+}
